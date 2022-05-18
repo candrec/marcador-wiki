@@ -9,5 +9,6 @@ text = pyperclip.paste()
 lines = text.split('\n')
 for i in range(len(lines)):    #percorre todos os índices da lista "lines" no loop
     lines[i] = '* ' + lines[i] #acrescenta um asterisco em cada string da lista "lines"
+text = '\n'.join(lines)
 
 pyperclip.copy(text)
