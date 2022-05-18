@@ -6,6 +6,8 @@
 import pyperclip
 text = pyperclip.paste()
 
-# TODO: separa as linhas e acrescenta asteriscos
+lines = text.split('\n')
+for i in range(len(lines)):    #percorre todos os índices da lista "lines" no loop
+    lines[i] = '* ' + lines[i] #acrescenta um asterisco em cada string da lista "lines"
 
 pyperclip.copy(text)
